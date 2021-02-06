@@ -165,6 +165,8 @@ p{
     body{
         background:url("./images/bg-mobile.png")no-repeat;
         height: 100%;
+        width: 100%;
+        background-size: 800px;
     }
     .card{
         display: flex;
@@ -196,5 +198,10 @@ p{
     .card_popup:after{
         content: none;
     }
-
+}
+@media(max-width:500px){
+    body{
+        background-image: url("./images/bg-mobile.png");
+        background-size:500px;;
+    }
 }
