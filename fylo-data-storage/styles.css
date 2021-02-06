@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: url("./images/bg-desktop.png") no-repeat bottom;
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.card{
+    display: flex;
+    
+}
+/*-Card Esquerdo-*/
+.esquerdo{
+    padding: 2.5rem;
+    height: 200px;
+    width:350px ;
+    background: hsl(228, 56%, 26%);
+
+    border-radius: 0.5rem 6.5rem 0.5rem 0.5rem;
+}
+.agrupamento img{
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    width: auto;
+
+    margin-top: 25px;
+    margin-left: 10px;
+
+    background:hsl(229, 57%, 11%);
+
+    border-radius: 0.6rem;
+    
+}
+.agrupamento img:first-child{
+    margin-left: 0;
+}
+/*-Card Direito-*/
+.direito{
+    height: 140px;
+    width: 500px;
+    margin-left: 30px;
+    
+    background: hsl(228, 56%, 26%);
+    color:hsl(243, 100%, 93%);
+
+    padding: 1rem 2.2rem;
+
+    border-radius: 0.5rem;
+}
+
+.card_popup{
+    height: 65px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    
+    margin-left: 277px;
+    margin-top: -60px;
+    
+    padding: 0.90rem;
+
+    background: white;
+
+    border-radius: 0.5rem  0.5rem 0 0.5rem;
+    position: relative;
+}
+.card_popup:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 20px solid white;
+    bottom: -18px;
+    left: 86.8%;
+  }
+
+.card_popup h1{
+    color: black;
+    font-weight: 700;
+    font-size: 37px;
+}
+.card_popup p{
+    margin-left: 10px;
+    color: hsl(229, 7%, 55%);
+    font-size: 12px;
+    font-weight: 700;
+}
+p{
+    margin-top: 9px;
+    font-size: 14px;
+
+}
+/*Degrade*/
+.sombra{
+    height: 18px;
+    margin-top: 15px;
+    background: hsl(228, 56%, 20%);
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+.gradiente{
+    height: 12px;
+    width: 330px;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 3px;
+    
+    background-image: linear-gradient( to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 1rem;
+    
+}
+.marcador{
+    height: 8px;
+    width: 8px;
+    
+    margin-left: 319px;
+
+    background: white;
+
+    border-radius: 50%;
+}
+.giga{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 7px;
+    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*Footer*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: white; }
